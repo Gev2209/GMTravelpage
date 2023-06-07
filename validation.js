@@ -1,27 +1,3 @@
-const bar = document.querySelector('.fa-bars')
-const clBar = document.querySelector('.fa-xmark')
-const infoStructure = document.querySelector('.bottomList')
-const registerr = document.getElementById('register')
-const inputContainer = document.getElementById('input-container')
-const barRegister = document.querySelector('.btn2')
-const barLogin = document.querySelector('.btn3')
-const login  = document.getElementById('login')
-const loginContainers = document.getElementById('login-container')
-
-
-
-export {
-    bar,
-    clBar,
-    infoStructure,
-    registerr,
-    inputContainer,
-    barRegister,
-    barLogin,
-    login,
-    loginContainers
-}
-
 function validationRegister () {
     const form = document.getElementById('form')
     const email = document.getElementById('email').value
