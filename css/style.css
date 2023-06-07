@@ -85,6 +85,7 @@ main .gm .bottomList {
 }
 @media only screen and (max-width: 520px) {
   main .gm .bottomList {
+    transition: all ease 0.8s;
     position: absolute;
     right: 1%;
   }
@@ -214,7 +215,7 @@ main .gm .fa-bars {
     margin-top: 9px;
     margin-right: 30px;
     transition: all ease 0.8s;
-    color: white;
+    color: #ffffff;
   }
 }
 main .gm .fa-xmark {
@@ -222,12 +223,16 @@ main .gm .fa-xmark {
   cursor: pointer;
   font-size: 40px;
 }
+main .gm .fa-xmark:active {
+  animation: faxmas linear 0.8s;
+}
 @media only screen and (max-width: 580px) {
   main .gm .fa-xmark {
     margin-top: 9px;
     margin-right: 30px;
     color: white;
     transition: all ease 0.8s;
+    animation: faClose linear 0.5s;
   }
 }
 main .img_section .blur {
@@ -538,5 +543,17 @@ main .about .center_info .box3 {
     transform: translateY(-200px);
     transition: all ease 0.8s;
     filter: blur(30px);
+  }
+}
+@keyframes faClose {
+  from {
+    transform: rotate(90deg);
+    transition: all ease 0.5s;
+  }
+}
+@keyframes faxmas {
+  from {
+    transform: rotate(-90deg);
+    transition: all ease 0.5s;
   }
 }

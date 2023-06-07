@@ -80,8 +80,7 @@ barLogin.addEventListener('click', loginContainerBar    )
 function loginContainer () {
     setTimeout (() => {
         loginContainers.style.display = 'block'
-        const createBlur = document.createElement('div');
-        
+    
         },1000)
     
 }
@@ -118,14 +117,18 @@ function openBar () {
 
 function closeBar () {
     clBar.style.display = 'block'
+    
 }
 
 function openCloseBar () {
-    clBar.style.display = 'none'
-    bar.style.display = 'block'
-    infoStructure.style.display = 'none'
-    inputContainer.style.display = 'none'
-    loginContainers.style.display = 'none'
+    setTimeout(() => {
+        clBar.style.display = 'none'
+        bar.style.display = 'block'
+        infoStructure.style.display = 'none'
+        inputContainer.style.display = 'none'
+        loginContainers.style.display = 'none'
+    },600)
+   
 }
 
 bar.addEventListener('click', closeBar)

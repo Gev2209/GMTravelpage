@@ -22,10 +22,16 @@ main {
         box-shadow: 2px 3px 4px rgb(68, 68, 68);
         width: 100%;
         z-index: 990;
+        // #bar {
+        //     @media only screen and (min-width:700px) {
+        //         display: none;
+        //     }
+        // }
         .loginRegister {
             display: flex;
             justify-content: flex-end;
         }
+        
         #login {
             margin-right: 10px; 
             font-size: 20px;
@@ -84,6 +90,7 @@ main {
             backdrop-filter: blur(15px);
             @media only screen and (max-width:520px) {
                     // padding: 10px 0;
+                    transition: all ease .8s;
                     position: absolute;
                     right: 1%;
             }
@@ -218,20 +225,26 @@ main {
                 display: block;
                 margin-top: 9px;
                 margin-right: 30px;
+
                 transition: all ease .8s;
-                color: white;
+                color: rgb(255, 255, 255);
             }
+            
         }
         .fa-xmark {
             display: none;
             cursor: pointer;
             font-size: 40px;
+            &:active {
+                animation: faxmas linear .8s;
+            }
             @media only screen and (max-width:580px) {
                 // display: block;
                 margin-top: 9px;
                 margin-right: 30px;
                 color: white;
                 transition: all ease .8s;
+                animation: faClose linear  .5s;
                 // animation: closeBar linear  .8s;
             }
         }
@@ -539,6 +552,19 @@ main {
     }
 } 
 
+@keyframes faClose {
+    from {
+        transform: rotate(90deg);
+        transition: all ease .5s;
+    }
 
+}
+
+@keyframes faxmas {
+    from {
+        transform: rotate(-90deg);
+        transition: all ease .5s;
+    }
+}
     
 
