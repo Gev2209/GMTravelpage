@@ -237,7 +237,12 @@ main {
         }
     }
     .img_section {
-        .img {
+        .blur {
+           transform: translate(1100px);
+           transition: all ease .9s;
+           filter: blur(10px);
+        }
+        #img {
             background-image: url("https://wallpaper.dog/large/20364190.jpg");
             height: 100vh;
             min-height: 600px;
@@ -246,7 +251,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            .center_text {
+            #center_text {
                 text-align: center;
                 text-transform: uppercase;
                 width: 100%;
@@ -259,7 +264,7 @@ main {
                     animation: inputTop linear normal .8s;
                     justify-content: center;
                     align-items: center;
-                    background: rgba(255, 255, 255, 0.726);
+                    background: rgba(114, 114, 114, 0.644);
                     width: 35%;
                     height: 260px;
                     margin: auto;
@@ -533,5 +538,7 @@ main {
             filter: blur(30px);
     }
 } 
+
+
     
 

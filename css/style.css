@@ -230,7 +230,12 @@ main .gm .fa-xmark {
     transition: all ease 0.8s;
   }
 }
-main .img_section .img {
+main .img_section .blur {
+  transform: translate(1100px);
+  transition: all ease 0.9s;
+  filter: blur(10px);
+}
+main .img_section #img {
   background-image: url("https://wallpaper.dog/large/20364190.jpg");
   height: 100vh;
   min-height: 600px;
@@ -240,12 +245,12 @@ main .img_section .img {
   align-items: center;
   justify-content: center;
 }
-main .img_section .img .center_text {
+main .img_section #img #center_text {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 }
-main .img_section .img .center_text #login-container {
+main .img_section #img #center_text #login-container {
   position: absolute;
   top: 30%;
   right: 30%;
@@ -254,7 +259,7 @@ main .img_section .img .center_text #login-container {
   animation: inputTop linear normal 0.8s;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.726);
+  background: rgba(114, 114, 114, 0.644);
   width: 35%;
   height: 260px;
   margin: auto;
@@ -264,24 +269,24 @@ main .img_section .img .center_text #login-container {
   animation: inputTop linear 0.6s;
 }
 @media only screen and (max-width: 520px) {
-  main .img_section .img .center_text #login-container {
+  main .img_section #img #center_text #login-container {
     width: 85%;
     right: 7%;
   }
 }
-main .img_section .img .center_text #login-container form {
+main .img_section #img #center_text #login-container form {
   margin-top: 20px;
 }
-main .img_section .img .center_text #login-container form #loginText {
+main .img_section #img #center_text #login-container form #loginText {
   display: block;
   font-size: 12px;
 }
-main .img_section .img .center_text #login-container form .register2 {
+main .img_section #img #center_text #login-container form .register2 {
   color: #110353;
   font-size: 20px;
   letter-spacing: 2px;
 }
-main .img_section .img .center_text #login-container form input {
+main .img_section #img #center_text #login-container form input {
   font-size: 18px;
   padding: 8px 0 8px 3px;
   margin: 10px;
@@ -293,11 +298,11 @@ main .img_section .img .center_text #login-container form input {
   width: 80%;
 }
 @media only screen and (max-width: 520px) {
-  main .img_section .img .center_text #login-container form input {
+  main .img_section #img #center_text #login-container form input {
     font-size: 17px;
   }
 }
-main .img_section .img .center_text #login-container form .buttonLogin {
+main .img_section #img #center_text #login-container form .buttonLogin {
   width: 70%;
   padding: 10px;
   border-radius: 15px;
@@ -308,11 +313,11 @@ main .img_section .img .center_text #login-container form .buttonLogin {
   background: #1e0055;
   color: white;
 }
-main .img_section .img .center_text #login-container form .buttonLogin:hover {
+main .img_section #img #center_text #login-container form .buttonLogin:hover {
   box-shadow: 0 0 30px white;
   transition: all ease 0.6s;
 }
-main .img_section .img .center_text #input-container {
+main .img_section #img #center_text #input-container {
   position: absolute;
   top: 10%;
   right: 30%;
@@ -329,18 +334,18 @@ main .img_section .img .center_text #input-container {
   backdrop-filter: blur(50%);
   border-radius: 10px;
 }
-main .img_section .img .center_text #input-container .sign {
+main .img_section #img #center_text #input-container .sign {
   background: #0096db;
   color: white;
 }
-main .img_section .img .center_text #input-container .sign:hover {
+main .img_section #img #center_text #input-container .sign:hover {
   box-shadow: 0 0 20px white;
   transition: all ease 0.7s;
 }
-main .img_section .img .center_text #input-container .googlefacebook {
+main .img_section #img #center_text #input-container .googlefacebook {
   margin: 20px;
 }
-main .img_section .img .center_text #input-container .googlefacebook .page {
+main .img_section #img #center_text #input-container .googlefacebook .page {
   padding: 5px;
   margin: 10px;
   border: 1px solid #000;
@@ -349,53 +354,53 @@ main .img_section .img .center_text #input-container .googlefacebook .page {
   margin: auto;
   border-radius: 20px;
 }
-main .img_section .img .center_text #input-container .googlefacebook .google {
+main .img_section #img #center_text #input-container .googlefacebook .google {
   margin-bottom: 10px;
   border: none;
   background: red;
   cursor: pointer;
 }
-main .img_section .img .center_text #input-container .googlefacebook .google:hover {
+main .img_section #img #center_text #input-container .googlefacebook .google:hover {
   background: #7a0101;
   box-shadow: 0 0 30px red;
   transition: all ease 0.7s;
 }
-main .img_section .img .center_text #input-container .googlefacebook .google i {
+main .img_section #img #center_text #input-container .googlefacebook .google i {
   margin-right: 10px;
 }
-main .img_section .img .center_text #input-container .googlefacebook .facebook {
+main .img_section #img #center_text #input-container .googlefacebook .facebook {
   background: #010147;
   cursor: pointer;
 }
-main .img_section .img .center_text #input-container .googlefacebook .facebook:hover {
+main .img_section #img #center_text #input-container .googlefacebook .facebook:hover {
   background: #00001a;
   box-shadow: 0 0 30px blue;
   transition: all ease 0.7s;
 }
-main .img_section .img .center_text #input-container .googlefacebook .facebook i {
+main .img_section #img #center_text #input-container .googlefacebook .facebook i {
   margin-right: 8px;
 }
-main .img_section .img .center_text #input-container .reg:hover {
+main .img_section #img #center_text #input-container .reg:hover {
   background: #278801;
   box-shadow: 0 0 30px #ffffff;
   color: white;
 }
-main .img_section .img .center_text #input-container .register {
+main .img_section #img #center_text #input-container .register {
   color: white;
   font-size: 20px;
 }
 @media only screen and (max-width: 520px) {
-  main .img_section .img .center_text #input-container .register {
+  main .img_section #img #center_text #input-container .register {
     padding-top: 10px;
   }
 }
 @media only screen and (max-width: 520px) {
-  main .img_section .img .center_text #input-container {
+  main .img_section #img #center_text #input-container {
     width: 80%;
     right: 50px;
   }
 }
-main .img_section .img .center_text #input-container button {
+main .img_section #img #center_text #input-container button {
   margin-top: 10px;
   font-size: 20px;
   padding: 5px 10px;
@@ -404,30 +409,30 @@ main .img_section .img .center_text #input-container button {
   cursor: pointer;
   border: none;
 }
-main .img_section .img .center_text #input-container button:hover {
+main .img_section #img #center_text #input-container button:hover {
   transition: all ease 0.5s;
   text-transform: capitalize;
 }
-main .img_section .img .center_text #input-container .checkbox {
+main .img_section #img #center_text #input-container .checkbox {
   color: white;
   font-size: 12px;
 }
-main .img_section .img .center_text #input-container a {
+main .img_section #img #center_text #input-container a {
   font-size: 12px;
   color: #f1f1f1;
   margin-left: 20px;
 }
-main .img_section .img .center_text #input-container a:hover {
+main .img_section #img #center_text #input-container a:hover {
   border-bottom: 1px solid white;
 }
-main .img_section .img .center_text #input-container form {
+main .img_section #img #center_text #input-container form {
   margin-top: 20px;
 }
-main .img_section .img .center_text #input-container form #text {
+main .img_section #img #center_text #input-container form #text {
   display: block;
   font-size: 12px;
 }
-main .img_section .img .center_text #input-container form input {
+main .img_section #img #center_text #input-container form input {
   font-size: 18px;
   padding: 5px 0 5px 3px;
   padding-left: 10px;
@@ -438,14 +443,14 @@ main .img_section .img .center_text #input-container form input {
   font-weight: 100;
 }
 @media only screen and (max-width: 520px) {
-  main .img_section .img .center_text #input-container form input {
+  main .img_section #img #center_text #input-container form input {
     font-size: 17px;
   }
 }
-main .img_section .img .center_text #input-container form .input {
+main .img_section #img #center_text #input-container form .input {
   width: 70%;
 }
-main .img_section .img .center_text .travel {
+main .img_section #img #center_text .travel {
   color: #042699;
   font-size: 100px;
   opacity: 25%;
@@ -453,11 +458,11 @@ main .img_section .img .center_text .travel {
   filter: blur(2px);
 }
 @media only screen and (max-width: 600px) {
-  main .img_section .img .center_text .travel {
+  main .img_section #img #center_text .travel {
     font-size: 40px;
   }
 }
-main .img_section .img .center_text .second_text {
+main .img_section #img #center_text .second_text {
   display: inline;
   font-size: 60px;
   color: #ffffff;
@@ -465,11 +470,11 @@ main .img_section .img .center_text .second_text {
   letter-spacing: 2px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.26);
 }
-main .img_section .img .center_text .second_text a {
+main .img_section #img #center_text .second_text a {
   color: white;
 }
 @media only screen and (max-width: 900px) {
-  main .img_section .img .center_text .second_text {
+  main .img_section #img #center_text .second_text {
     font-size: 40px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.26);
   }

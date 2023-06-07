@@ -3,75 +3,13 @@ const clBar = document.querySelector('.fa-xmark')
 const infoStructure = document.querySelector('.bottomList')
 const registerr = document.getElementById('register')
 const inputContainer = document.getElementById('input-container')
-const imgSection = document.querySelector('.img_section')
 const barRegister = document.querySelector('.btn2')
 const barLogin = document.querySelector('.btn3')
 const login  = document.getElementById('login')
 const loginContainers = document.getElementById('login-container')
+const blurSection = document.getElementById('travelList')
 
 
-
-
-// import { bar,clBar,infoStructure,registerr,inputContainer,barLogin,login,loginContainers} from './helpers.js'
-function loginContainerBar () {
-    loginContainers.style.display= 'block';
-    infoStructure.style.display = 'none'
-
-}
-barLogin.addEventListener('click', loginContainerBar    )
-  
-
-function loginContainer () {
-    setTimeout (() => {
-        loginContainers.style.display = 'block'
-        },1000)
-    
-}
-login.addEventListener('click', loginContainer)
-
-//------------------------------------------------------------------
-
-
-function loginTopDown () {
-    setTimeout(() => {
-        inputContainer.style.display = 'block'
-        inputContainer.style.paddingTop = '20px'
-    },1000)
-  
-}
-registerr.addEventListener('click',loginTopDown)
-
-//-------------------------------------------------------------------
-
-function openBarLogin () {
-    inputContainer.style.display = 'block'
-    infoStructure.style.display = 'none'
-}
-barRegister.addEventListener('click',openBarLogin)
-
-//-------------------------------------------------------------
-
-function openBar () {
-   bar.style.display = 'none'
-   bar.style.transition = 'all ease .8s'
-   infoStructure.style.display = 'block'
-}
-
-function closeBar () {
-    clBar.style.display = 'block'
-}
-
-function openCloseBar () {
-    clBar.style.display = 'none'
-    bar.style.display = 'block'
-    infoStructure.style.display = 'none'
-    inputContainer.style.display = 'none'
-    loginContainers.style.display = 'none'
-}
-
-bar.addEventListener('click', closeBar)
-bar.addEventListener('click',openBar)
-clBar.addEventListener('click',openCloseBar)
 
 
 function validationRegister () {
@@ -108,7 +46,7 @@ function validationLogin () {
         loginForm.classList.add('valid');
         loginForm.classList.remove('invalid');
         loginText.innerHTML = 'Your Email Address in Valid.';
-        loginText.style.color = 'white';
+        loginText.style.color = 'black';
         // loginText.style.boxShadow = ' 0 0 10px black'
         loginText.style.borderBottom = '2px solid white'
         loginText.style.width = '50%'
@@ -129,5 +67,71 @@ function validationLogin () {
         loginText.style.color = 'green';
     }
 }
+
+// import { bar,clBar,infoStructure,registerr,inputContainer,barLogin,login,loginContainers} from './helpers.js'
+function loginContainerBar () {
+    loginContainers.style.display= 'block';
+    infoStructure.style.display = 'none'
+
+}
+barLogin.addEventListener('click', loginContainerBar    )
+  
+
+function loginContainer () {
+    setTimeout (() => {
+        loginContainers.style.display = 'block'
+        const createBlur = document.createElement('div');
+        
+        },1000)
+    
+}
+login.addEventListener('click', loginContainer)
+
+//------------------------------------------------------------------
+
+
+function inputContainerRegister () {
+    setTimeout(() => {
+        inputContainer.style.display = 'block'
+        inputContainer.style.paddingTop = '20px'
+        blurSection.classList.toggle('blur')
+    },1000)
+  
+}
+registerr.addEventListener('click',inputContainerRegister)
+
+//-------------------------------------------------------------------
+
+function openBarLogin () {
+    inputContainer.style.display = 'block'
+    infoStructure.style.display = 'none'
+}
+barRegister.addEventListener('click',openBarLogin)
+
+//-------------------------------------------------------------
+
+function openBar () {
+   bar.style.display = 'none'
+   bar.style.transition = 'all ease .8s'
+   infoStructure.style.display = 'block'
+}
+
+function closeBar () {
+    clBar.style.display = 'block'
+}
+
+function openCloseBar () {
+    clBar.style.display = 'none'
+    bar.style.display = 'block'
+    infoStructure.style.display = 'none'
+    inputContainer.style.display = 'none'
+    loginContainers.style.display = 'none'
+}
+
+bar.addEventListener('click', closeBar)
+bar.addEventListener('click',openBar)
+clBar.addEventListener('click',openCloseBar)
+
+
 
 
