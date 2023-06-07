@@ -259,13 +259,13 @@ main {
                     animation: inputTop linear normal .8s;
                     justify-content: center;
                     align-items: center;
-                    background: linear-gradient(#00462e79,rgba(0, 22, 54, 0.541));
+                    background: rgba(255, 255, 255, 0.726);
                     width: 35%;
                     height: 260px;
                     margin: auto;
                     z-index: 999;
                     box-shadow: 4px 5px 10px;
-                    backdrop-filter: blur(5%);
+                    // backdrop-filter: blur(5%);
                     border-radius: 10px;
                     animation: inputTop linear .6s;
                     @media only screen and (max-width:520px) {
@@ -274,16 +274,21 @@ main {
                     }
                     form {
                         margin-top: 20px;
+                        #loginText {
+                            display: block;
+                            font-size: 12px;
+                        }
                         .register2 {
-                            color: white;
+                            color: rgb(17, 3, 83);
                             font-size: 20px;
+                            letter-spacing: 2px;
                         }
                         input {
                             font-size: 18px;
                             padding: 8px 0 8px 3px;
                             margin: 10px;
                             padding-left: 10px;
-                            border: none;
+                            border: 0.5px solid grey;
                             border-radius: 16px;
                             @media only screen and (max-width:520px) {
                                 font-size: 17px;
@@ -318,12 +323,12 @@ main {
                     animation: inputTop linear normal .8s;
                     justify-content: center;
                     align-items: center;
-                    background: linear-gradient(#00462e79,rgba(0, 22, 54, 0.541));
+                    background: linear-gradient(#a3a3a2,rgb(0, 22, 54));
                     width: 35%;
                     margin: auto;
                     z-index: 999;
                     box-shadow: 4px 5px 10px;
-                    backdrop-filter: blur(50%);
+                    // backdrop-filter: blur(50px);
                     border-radius: 10px;
                     .sign {
                         background: #0096db;
@@ -418,6 +423,10 @@ main {
                     }
                     form {
                         margin-top: 20px;
+                        #text {
+                            display: block;
+                            font-size: 12px;        
+                        }
                         input {
                             font-size: 18px;
                             padding: 5px 0 5px 3px;

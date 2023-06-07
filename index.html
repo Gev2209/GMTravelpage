@@ -82,10 +82,11 @@
                     
                         <div id="input-container">
                             <span class="register"> <i class="fa-solid fa-address-card"></i> Register</span>
-                            <form>
+                            <form id="form">
                                 <div>
                                     <input class="input" required="required" type="text" placeholder="Please write your name">
-                                    <input class="input" type="email" placeholder="Email adress">
+                                    <input class="input" type="email" placeholder="Email adress" id="email" onkeydown="validationRegister()">
+                                    <span id="text" ></span>
                                     <input
                                         class="inputPassword input"
                                         type="password"
@@ -96,8 +97,7 @@
                                         class="inputPassword input"
                                         type="password"
                                         placeholder="Confirm password"
-                                        name=""
-                                        id="">
+                                        id="password">
                                     <button class="reg">Register</button>
                                     <button class="sign" >Sign In</button>
                                     <div class="googlefacebook">
@@ -116,10 +116,11 @@
                             </form>
                         </div>
                         <div id="login-container">
-                            <form>
+                            <form id="loginForm">
                                 <span class="register2"> Log in</span>
                                 <div>
-                                    <div><input class="input" required="" type="text email" placeholder="Please write your Name/Email"></div>
+                                    <input class="input" required="" type="email" placeholder="Please write your Email" id="Email" onkeydown="validationLogin()">
+                                    <span id="loginText"></span>
                                      <div><input
                                         class="inputPassword input"
                                         type="password"

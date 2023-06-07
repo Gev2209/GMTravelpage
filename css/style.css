@@ -254,13 +254,12 @@ main .img_section .img .center_text #login-container {
   animation: inputTop linear normal 0.8s;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#00462e79, rgba(0, 22, 54, 0.541));
+  background: rgba(255, 255, 255, 0.726);
   width: 35%;
   height: 260px;
   margin: auto;
   z-index: 999;
   box-shadow: 4px 5px 10px;
-  backdrop-filter: blur(5%);
   border-radius: 10px;
   animation: inputTop linear 0.6s;
 }
@@ -273,16 +272,21 @@ main .img_section .img .center_text #login-container {
 main .img_section .img .center_text #login-container form {
   margin-top: 20px;
 }
+main .img_section .img .center_text #login-container form #loginText {
+  display: block;
+  font-size: 12px;
+}
 main .img_section .img .center_text #login-container form .register2 {
-  color: white;
+  color: #110353;
   font-size: 20px;
+  letter-spacing: 2px;
 }
 main .img_section .img .center_text #login-container form input {
   font-size: 18px;
   padding: 8px 0 8px 3px;
   margin: 10px;
   padding-left: 10px;
-  border: none;
+  border: 0.5px solid grey;
   border-radius: 16px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 100;
@@ -317,12 +321,11 @@ main .img_section .img .center_text #input-container {
   animation: inputTop linear normal 0.8s;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#00462e79, rgba(0, 22, 54, 0.541));
+  background: linear-gradient(#a3a3a2, #001636);
   width: 35%;
   margin: auto;
   z-index: 999;
   box-shadow: 4px 5px 10px;
-  backdrop-filter: blur(50%);
   border-radius: 10px;
 }
 main .img_section .img .center_text #input-container .sign {
@@ -418,6 +421,10 @@ main .img_section .img .center_text #input-container a:hover {
 }
 main .img_section .img .center_text #input-container form {
   margin-top: 20px;
+}
+main .img_section .img .center_text #input-container form #text {
+  display: block;
+  font-size: 12px;
 }
 main .img_section .img .center_text #input-container form input {
   font-size: 18px;
